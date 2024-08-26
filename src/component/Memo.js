@@ -17,16 +17,16 @@ const Memo = ({ item }) => {
       {isImageLoaded ? (
         <div>
           {" "}
-          <div className="absolute top-[70px] left-16 text-lg text-center text-[#9b2a2a] font-medium">
+          <div className="absolute top-[65px] left-16 text-3xl text-center text-[#9b2a2a] font-semibold">
             Name
           </div>
-          <div className="absolute top-[110px] left-16 text-lg text-center text-white">
+          <div className="absolute top-[110px] left-16 text-2xl text-center text-white">
             {item.name}
           </div>
-          <div className="absolute top-[152px] left-16 text-lg text-center text-[#9b2a2a] font-medium">
+          <div className="absolute top-[152px] left-16 text-3xl text-center text-[#9b2a2a] font-semibold">
             Phone
           </div>
-          <div className="absolute top-[195px] left-16 text-lg text-center text-white">
+          <div className="absolute top-[195px] left-16 text-2xl text-center text-white">
             {item.phoneNumber}
           </div>
         </div>

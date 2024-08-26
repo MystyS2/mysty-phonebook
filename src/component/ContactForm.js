@@ -52,7 +52,7 @@ const ContactForm = () => {
         onPress={onOpen}
         color="danger"
         variant="ghost"
-        className="h-[56px] shadow-lg text-white backdrop-blur-xl backdrop-saturate-150"
+        className="h-[56px] shadow-lg text-white backdrop-blur-xl backdrop-saturate-150 text-2xl"
       >
         Add new number
       </Button>
@@ -73,7 +73,7 @@ const ContactForm = () => {
         <ModalContent>
           {(onClose) => (
             <form onSubmit={addContect}>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 text-2xl">
                 Add new number
               </ModalHeader>
               <ModalBody>
@@ -106,12 +106,12 @@ const ContactForm = () => {
                 <Button
                   color="foreground"
                   onPress={onClose}
-                  className="bg-[#ffffff33] shadow-lg shadow-[#c08c8a]"
+                  className="bg-[#ffffff33] shadow-lg shadow-[#c08c8a] text-lg"
                 >
                   Close
                 </Button>
                 <Button
-                  className="bg-[#ffffff33] shadow-lg shadow-[#c08c8a]"
+                  className="bg-[#ffffff33] shadow-lg shadow-[#c08c8a] text-lg"
                   onPress={onClose}
                   type="submit"
                 >

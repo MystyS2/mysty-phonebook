@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="bg-[#cba5a4] min-h-screen">
       <header className='flex flex-col items-center py-8 gap-8'>
-        <h1 className='text-4xl'>Phone Book</h1>
+        <h1 className='title text-6xl font-semibold text-white max-sm:text-4xl'>📖Phone Book📖</h1>
         <div className='flex gap-2'>
           <ContactForm/>
           <Search/>    

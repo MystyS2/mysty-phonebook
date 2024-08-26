@@ -14,8 +14,8 @@ const ContactList = () => {
       }
     }, [searchWord, contactList]);
   return (
-    <div className='flex flex-col items-center mx-4 my-4 gap-1'>
-        <div>저장된 연락처 : {contactList.length} 개</div>
+    <div className='flex flex-col items-center mx-4 mt-4 gap-1'>
+        <div className='text-2xl'>저장된 연락처 : {contactList.length} 개</div>
         <div className='grid grid-cols-5 mx-4 my-4 gap-1 max-2xl:grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1'>
             {filteredList.map((item, index) => (<Memo item={item} key={index} />))}
         </div>        

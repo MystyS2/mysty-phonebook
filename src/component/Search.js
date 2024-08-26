@@ -27,10 +27,10 @@ const Search = () => {
           onChange={(e) => setSearchWord(e.target.value)} // 입력값 상태 업데이트
           onKeyDown={searchByName} // 엔터키 입력 시 검색
           classNames={{
-            label: "text-black/50 dark:text-white/90",
+            label: "text-black/50 dark:text-white/90 text-lg",
             input: [
               "bg-transparent",
-              "text-black/90 dark:text-white/90",
+              "text-black/90 dark:text-white/90 text-lg",
               "placeholder:text-default-700/50 dark:placeholder:text-white/60",
             ],
             innerWrapper: "bg-transparent",
