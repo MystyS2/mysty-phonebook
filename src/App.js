@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import ContactForm from './component/ContactForm';
+import ContactList from './component/ContactList';
+import Search from './component/Search';
+
+// 1. 이름, 연락처, 이미지 등록 폼
+// 2. 연락처 리스트, search 박스/버튼
+// 3. 연락처 갯수 출력
+// 4. 이름으로 검색 기능
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="bg-[#cba5a4]">
+      <header className='flex flex-col items-center pt-8 gap-8'>
+        <h1 className='text-4xl'>Phone Book</h1>
+        <div className='flex gap-2'>
+          <ContactForm/>
+          <Search/>    
+        </div>
       </header>
+      <ContactList/>
     </div>
   );
 }
